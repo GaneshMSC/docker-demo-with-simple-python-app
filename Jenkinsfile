@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
+        echo"Hello Wolrd"
         sh 'sudo docker build -t flask-app -f Dockerfile .'
-        echo"Hello World"
       }
     }
   }
